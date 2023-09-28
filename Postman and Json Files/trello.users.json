@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "64ca3e275cb511f73d81ac29"
+  },
+  "userName": "ahmedFikryyy",
+  "firstName": "Ahmedd123",
+  "lastName": "fikry",
+  "email": "ahmed123@route.com",
+  "password": "$2b$08$I00LI4z/bzJQ1D14gJ2dj.vUgmkaSrad3JHLQtdtJiUzkONIKxQ42",
+  "age": 26,
+  "gender": "male",
+  "phone": "01165909999",
+  "isDeleted": false,
+  "available": true,
+  "tasks": [],
+  "createdAt": {
+    "$date": "2023-08-02T11:29:43.745Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T19:16:21.811Z"
+  },
+  "__v": 0,
+  "tasksCreated": [
+    {
+      "$oid": "64ca88cd9f5770831b374659"
+    },
+    {
+      "$oid": "64ca9ae50e2db1926464a32f"
+    },
+    {
+      "$oid": "64ca9b6e115789453e244e29"
+    },
+    {
+      "$oid": "64ca9ced6fdbbd95b0f46651"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64ca7cafb1930461fddaf69f"
+  },
+  "userName": "muhameeddd12",
+  "firstName": "muhameed",
+  "lastName": "ahmed",
+  "email": "muhameed@route.com",
+  "password": "$2b$08$feJH8wwjqaW6Icuv.D0X8eMGoGU5THTo/.RimTTwASt5XR7pBRvP.",
+  "age": 26,
+  "gender": "male",
+  "phone": "015687749854",
+  "isDeleted": false,
+  "available": false,
+  "tasks": [
+    {
+      "$oid": "64ca860f59f2e3f0a52a3c66"
+    },
+    {
+      "$oid": "64ca87fd59f2e3f0a52a3c7d"
+    },
+    {
+      "$oid": "64ca88cd9f5770831b374659"
+    },
+    {
+      "$oid": "64ca998717ffe653603d6c25"
+    },
+    {
+      "$oid": "64ca99fbae2660bc7ba6b13e"
+    },
+    {
+      "$oid": "64ca9ae50e2db1926464a32f"
+    },
+    {
+      "$oid": "64ca9ced6fdbbd95b0f46651"
+    }
+  ],
+  "tasksCreated": [],
+  "createdAt": {
+    "$date": "2023-08-02T15:56:31.214Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T18:14:05.558Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ca7cc2b1930461fddaf6a2"
+  },
+  "userName": "mahmouuud",
+  "firstName": "mahmoud",
+  "lastName": "ahmed",
+  "email": "mahmoud@route.com",
+  "password": "$2b$08$kE.Dvgrhi/1COzjWBFk0WeJQr0.dZKchgfG35/Z9cGyLsUgW/nksa",
+  "age": 26,
+  "gender": "male",
+  "phone": "0156849854",
+  "isDeleted": false,
+  "available": false,
+  "tasks": [
+    {
+      "$oid": "64ca860f59f2e3f0a52a3c66"
+    },
+    {
+      "$oid": "64ca87fd59f2e3f0a52a3c7d"
+    },
+    {
+      "$oid": "64ca9ced6fdbbd95b0f46651"
+    },
+    {
+      "$oid": "64ca9ced6fdbbd95b0f46651"
+    },
+    {
+      "$oid": "64ca9ced6fdbbd95b0f46651"
+    }
+  ],
+  "tasksCreated": [],
+  "createdAt": {
+    "$date": "2023-08-02T15:56:50.885Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-02T19:33:03.107Z"
+  },
+  "__v": 0
+}]

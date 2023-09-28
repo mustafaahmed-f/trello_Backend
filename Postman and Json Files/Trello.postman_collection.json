@@ -1,0 +1,637 @@
+{
+	"info": {
+		"_postman_id": "8339cbc1-0267-4be3-86cd-0477a2beebcc",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25990827",
+		"_collection_link": "https://restless-shadow-409741.postman.co/workspace/Team-Workspace~b0f10523-a1bf-40c5-83b2-1b09792f21be/collection/25990827-8339cbc1-0267-4be3-86cd-0477a2beebcc?action=share&source=collection_link&creator=25990827"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "changePassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im1vc3RhZmFhaG1lZDE5OTciLCJpZCI6IjY0ZTc0Y2ZiOWJhMzg1YWUxZDMwZWRmOSIsImlhdCI6MTY5MzE1NzY1MywiZXhwIjoxNjkzMTU3NzEzfQ.YXVsKE6TgXR9xXEBh7Z-XdmClVaPU_0zDPlshK16uXo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\":\"Aaaaaa@123\",\r\n    \"confirmPassword\":\"Aaaaaa@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/user/changePassword"
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI0NTE5NTksImV4cCI6MTY5MjQ1NDk1OX0.aR-iudUp2YgGf3_6f_XUwE8rT7jbu6qGxae57Lnv-I8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\":26\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/user/updateUser"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFobWVkRmlrcnl5eSIsImlkIjoiNjRjOTliYjY0M2ZjODY4ZDRlODc5Y2QzIiwiaWF0IjoxNjkwOTM3MDc3LCJleHAiOjE2OTA5NDAwNzd9.hOWurRkMxwe7SOnkLoUHO2eOxrj7Bw7j469KPmE-Ehk",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:5000/user/deleteUser"
+					},
+					"response": []
+				},
+				{
+					"name": "SoftDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTIyMDEzNjYsImV4cCI6MTY5MjIwNDM2Nn0.FhMGf864sOrdNxTeRYRrZrOHRRtgZm6uer-hjhmNoLY",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:5000/user/softDelete"
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFobWVkRmlrcnl5eSIsImlkIjoiNjRjOWE3MTY2NTEzMWY0Njg0ZTVhNjg4IiwiaWF0IjoxNjkwOTc1Mzg5LCJleHAiOjE2OTA5NzgzODl9.BDdd4gP2AM4uPh0PwVWeVoKqldjepIq8vjF6zHweqvk",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:5000/user/logOut"
+					},
+					"response": []
+				},
+				{
+					"name": "profileImg",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI4Nzc1NDUsImV4cCI6MTY5Mjg4MDU0NX0.DhBrjpQRr3sktAFrPAvPGXxYJIczELpgPg9dcvoAtcI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/Users/DELL/Desktop/349063554_218200230969454_889747038875016105_n.jpg"
+								}
+							]
+						},
+						"url": "http://localhost:5000/user/profile/image"
+					},
+					"response": []
+				},
+				{
+					"name": "cover images",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI4MjMzNTEsImV4cCI6MTY5MjgyNjM1MX0.vMFl4ei50EvvGvmxPXDsLKIwkKqKt5TCh6EOhTm-dc0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/DELL/Desktop/code.png",
+										"/C:/Users/DELL/Desktop/IMG-20181029-WA0004.jpg"
+									]
+								}
+							]
+						},
+						"url": "http://localhost:5000/user/profile/coverImg"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProfileImg",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI4MDY2NDMsImV4cCI6MTY5MjgwOTY0M30.Pj28EAqHpIG2ZfHH7xACgw14hx48QF8Lp5OX0uNzVLI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/Users/DELL/Desktop/347589965_1739100589858516_1230199339941145181_n.jpg"
+								}
+							]
+						},
+						"url": "http://localhost:5000/user/deleteProfilePicture"
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCoverImages",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI4MDY2NDMsImV4cCI6MTY5MjgwOTY0M30.Pj28EAqHpIG2ZfHH7xACgw14hx48QF8Lp5OX0uNzVLI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/Users/DELL/Desktop/347589965_1739100589858516_1230199339941145181_n.jpg"
+								}
+							]
+						},
+						"url": "http://localhost:5000/user/deleteCoverImages"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\":\"mostafaahmed1997\",\r\n    \"firstName\" : \"Mostafa\",\r\n    \"lastName\":\"ahmed\",\r\n    \"email\":\"mostafafikry97@gmail.com\",\r\n    \"password\":\"Aaaaa@123\",\r\n    \"rePassword\":\"Aaaaa@123\",\r\n    \"age\":26,\r\n    \"gender\":\"male\",\r\n    \"phone\":\"01156590999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/signUp"
+					},
+					"response": []
+				},
+				{
+					"name": "logIn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mostafafikry97@gmail.com\",\r\n    \"password\":\"Aaaaaa@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/logIn"
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"mostafafikry97@gmail.com\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/forgotPass"
+					},
+					"response": []
+				},
+				{
+					"name": "NewPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"newPassword\":\"Aaaaa123\",\r\n    \"confirmPassword\":\"Aaaaa123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/newPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZDExNmEwYmVmNTczNGE2YzA5ODE3ZSIsImVtYWlsIjoibW9zdGFmYWZpa3J5OTdAZ21haWwuY29tIiwiaWF0IjoxNjkxNDI0NTY5fQ._Y3kNuCHoYrnwrVGJhos3IHwRekBZXA8fSCqQDrF1N4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tasks",
+			"item": [
+				{
+					"name": "addTask",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI1MzIwMzYsImV4cCI6MTY5MjUzNTAzNn0.9gKP4DCUXPuNgvabpGntqh_bxKSMsF2XMx1Q5EV5jrc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"Sixth task\",\r\n    \"description\":\"Siiiixxxx  TaaaaaaaassssskkkkQQQQQ\",\r\n    \"assignTo\":\"64e12cef54c50d1349b695fb\",\r\n    \"deadline\":\"2023-08-23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/tasks/addTask"
+					},
+					"response": []
+				},
+				{
+					"name": "updateTask",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTIxOTE0NzIsImV4cCI6MTY5MjE5NDQ3Mn0.xvTzNYh9Ew8D0OgIVEQbXIHID2QiwBr2U4tr-SdkdZs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n    \"assignTo\":\"64ca7cafb1930461fddaf69f\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/updateTask?_id=64dccb7bbc13df0ebf19577c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"updateTask"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "64dccb7bbc13df0ebf19577c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTask",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTIxOTE0NzIsImV4cCI6MTY5MjE5NDQ3Mn0.xvTzNYh9Ew8D0OgIVEQbXIHID2QiwBr2U4tr-SdkdZs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/deleteTask?_id=64dcc28d698daa8b2709d03c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"deleteTask"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "64dcc28d698daa8b2709d03c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTasksWithUsers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFobWVkRmlrcnl5eSIsImlkIjoiNjRjYTNlMjc1Y2I1MTFmNzNkODFhYzI5IiwiaWF0IjoxNjkwOTgzMTM0LCJleHAiOjE2OTA5ODYxMzR9.vxSapdQhlCXGVjeCPhnB0KF6nPVhP1zfKKUCGDn3j4o",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/getTasksWithUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"getTasksWithUsers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "asdfasdf",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "asdfetsgdfgd",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "aerawetaeradfacxcv",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTasksOfOneUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTIxOTE0NzIsImV4cCI6MTY5MjE5NDQ3Mn0.xvTzNYh9Ew8D0OgIVEQbXIHID2QiwBr2U4tr-SdkdZs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/tasks/getTasksOfOneUser"
+					},
+					"response": []
+				},
+				{
+					"name": "tasksAfterDeadline",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFobWVkRmlrcnl5eSIsImlkIjoiNjRjYTNlMjc1Y2I1MTFmNzNkODFhYzI5IiwiaWF0IjoxNjkwOTgzMTM0LCJleHAiOjE2OTA5ODYxMzR9.vxSapdQhlCXGVjeCPhnB0KF6nPVhP1zfKKUCGDn3j4o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/tasks/tasksAfterDeadline"
+					},
+					"response": []
+				},
+				{
+					"name": "tasksOfaUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFobWVkRmlrcnl5eSIsImlkIjoiNjRjYTNlMjc1Y2I1MTFmNzNkODFhYzI5IiwiaWF0IjoxNjkwOTgzMTM0LCJleHAiOjE2OTA5ODYxMzR9.vxSapdQhlCXGVjeCPhnB0KF6nPVhP1zfKKUCGDn3j4o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/tasksOfaUser/64ca7cafb1930461fddaf69f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"tasksOfaUser",
+								"64ca7cafb1930461fddaf69f"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadAttachments",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Mustafa__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6Im11c3RhZmFhaG1lZDk3IiwiaWQiOiI2NGQ5MDMzNmMyYjZkZDQyZjA2MzRkMzYiLCJpYXQiOjE2OTI4Nzc1NDUsImV4cCI6MTY5Mjg4MDU0NX0.DhBrjpQRr3sktAFrPAvPGXxYJIczELpgPg9dcvoAtcI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "attachments",
+									"type": "file",
+									"src": "/C:/Users/DELL/Desktop/10 angular projects.txt"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/tasks/attachment?_id=64e1fe3bcf9b2d33a0ecacaa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"tasks",
+								"attachment"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "64e1fe3bcf9b2d33a0ecacaa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
